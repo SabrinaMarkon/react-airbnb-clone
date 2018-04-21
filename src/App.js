@@ -31,6 +31,7 @@ class App extends Component {
               initialMonth={new Date('04-01-2017')} 
               />
           </div>
+          
 
         </ReactiveBase>
       </section>

@@ -30,9 +30,30 @@ class App extends Component {
               queryFormat="basic_date" 
               initialMonth={new Date('04-01-2017')} 
               />
+              <RangeSlider 
+                componentId="PriceSensor" 
+                dataField="price" 
+                title="Price Range" 
+                range={{
+                  start: 10,
+                  end: 250,
+                }} 
+                rangeLabels={{
+                  start: '$10',
+                  end: '$250',
+                }} 
+                defaultSelected={{
+                  start: 10,
+                  end: 50,
+                }} 
+                stepValue={10} 
+                interval={20} 
+                react={{
+                  and: ['DateRangeSensor'],
+                }} 
+              />
+              
           </div>
-          
-
         </ReactiveBase>
       </section>
     );

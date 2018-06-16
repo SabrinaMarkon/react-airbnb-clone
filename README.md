@@ -1,1 +1,0 @@
-Airbnb clone created with React, Airbase.io ReactiveSearch, and ElasticSearch full text search engine.
